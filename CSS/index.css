@@ -1,0 +1,276 @@
+/* CSS index */
+
+/* Styles pour la Grandeur des Écrans */
+/* Pour les écrans jusqu'à 600 pixels de large */
+@media screen and (max-width: 600px) {
+  /* Styles spécifiques pour les petits écrans */
+}
+
+/* Pour les écrans entre 601 et 900 pixels de large */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  /* Styles spécifiques pour les écrans de taille moyenne */
+}
+
+/* Pour les écrans supérieurs à 900 pixels de large */
+@media screen and (min-width: 901px) {
+  /* Styles spécifiques pour les grands écrans */
+}
+
+/* Styles généraux */
+body {
+    background-image: url('Image/BackGround.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Aligner l'image au centre */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.5); /* Couleur de fond avec transparence */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le Menu horizontalement */
+}
+
+
+/* Styles de l'en-tête */
+header, nav {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 1% 0; /* Augmentation du rembourrage pour un meilleur espacement */
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: #444;
+}
+
+nav {
+    background-color: #666;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 3%; /* Augmentation du rembourrage pour un meilleur espacement */
+}
+
+nav a:hover {
+    color: #4876FF;
+}
+
+.word:hover {
+    font-size: 2em;
+}
+
+
+/* Styles du pied de page */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #666;
+    color: #fff;
+    padding: 1% 0; /* Réduit légèrement la hauteur du pied de page */
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px; /* Hauteur minimale augmentée pour une meilleure visibilité */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icon__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 25px;
+    display: inline-block;
+    transition: transform 0.5s; /* Transition appliquée à la propriété de transformation */
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+/* Réduire la largeur des liens du menu dans le pied de page */
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 10px 5px; /* Réduit l'espace autour des liens */
+    display: inline-block;
+    transition: opacity 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+/* Au survol, augmenter l'opacité */
+.menu__link:hover {
+    opacity: 1;
+}
+
+/* Styles du bas de page */
+.Bas		{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+	margin: 0.3%;
+}
+
+.Cadena:hover {
+	color: #4876FF; /* Changez la couleur selon votre choix */
+}
+
+/* Styles du lien de la politique de confidentialité */
+#politiqueConfidentialite {
+    cursor: pointer;
+    user-select: none;
+}
+
+#politiqueConfidentialite ion-icon {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+#politiqueConfidentialite a {
+    display: none;
+}
+
+/* Styles Contenu de la Page */
+
+/* Styles Contenu du À Propos */
+.ImageAndy {
+    float: right; /* Aligner l'image à gauche */
+    margin-right: 20px; /* Ajuster la marge à droite de l'image */
+    margin-bottom: 20px; /* Espacement en bas de l'image */
+    max-width: 40%; /* Limiter la largeur de l'image pour un meilleur alignement */
+}
+
+.Titre {
+	font-family: 'Roboto Slab', serif;
+    font-size: 3em;
+	color: white;
+    margin-top: 5%; /* Espacement en bas du titre */
+    margin-bottom: 5%; /* Espacement en haut du titre */
+    text-align: center; /* Alignement du texte à gauche */
+}
+
+.Texte {
+	font-family: 'Roboto Slab', serif; /* Utilise la police Roboto Slab ou une police de secours de type serif */
+    font-size: 1.5em; /* Taille de police 1.5 fois la taille par défaut */
+    font-weight: bold; /* Texte en gras */
+	color: white; /* Couleur du texte est un gris foncé (#111) */
+    overflow: auto; /* Ajouter une barre de défilement si nécessaire lorsque le contenu dépasse la taille de l'élément */
+    line-height: 1.6; /* Espacement des lignes est 1.6 fois la taille de la police pour une meilleure lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Styles Contenu du Pourquoi Nous */
+.Section2 {
+    background-image: url('Image/Accueil.jpg');
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-size: cover; /* L'image de fond couvrira entièrement la section */
+    background-position: center; /* Centrer l'image de fond horizontalement et verticalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Titre2 {
+	font-family: 'Roboto Slab', serif;
+    font-size: 3em;
+	color: #111;
+    text-align: center; /* Alignement du texte à gauche */
+}
+
+.Texte2 {
+    font-family: 'Roboto Slab', serif; /* Utilise la police Roboto Slab ou une police de secours de type serif */
+    font-size: 2em; /* Taille de police 1.5 fois la taille par défaut */
+    font-weight: bold; /* Texte en gras */
+    color: #111; /* Couleur du texte est un gris foncé (#111) */
+    overflow: auto; /* Ajouter une barre de défilement si nécessaire lorsque le contenu dépasse la taille de l'élément */
+    line-height: 1.6; /* Espacement des lignes est 1.6 fois la taille de la police pour une meilleure lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.PopupTitre {
+	font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+	color: white;
+    text-align: center; /* Alignement du texte à gauche */
+}
+
+.Popup {
+	color: white; /* Changez la couleur selon votre choix */
+}
+
+.Popup:hover {
+	color: #4876FF; /* Changez la couleur selon votre choix */
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#accept-cookies-btn, #refuse-cookies-btn {
+    background-color: #4876FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+ .bouton-services {
+     background-color: #999; /* Couleur de fond noire */
+     color: #fff; /* Couleur du texte blanc */
+     padding: 10px 20px; /* Espacement intérieur */
+     font-size: 2em; /* Taille de la police */
+     border: 2px solid #fff; /* Contour blanc autour du bouton */
+     border-radius: 5px; /* Coins arrondis */
+     cursor: pointer; /* Curseur pointeur */
+     text-decoration: none; /* Supprimer le soulignement par défaut */
+	 outline: none; /* Supprimer le contour lorsqu'il est en focus */
+ }
+
+ .bouton-services:hover {
+     color: #4876FF; /* Changement de couleur du texte en bleu au survol */
+     border-color: #4876FF; /* Changement de la couleur du contour en bleu au survol */
+ }
+        
+ /* Styles pour le positionnement du bouton en bas de page */
+ .bouton {
+     width: 100%;
+     text-align: center;
+     padding: 40px 0;
+ }

@@ -1,0 +1,257 @@
+/* CSS NousJoindre */
+
+/* Styles pour la Grandeur des Écrans */
+/* Pour les écrans jusqu'à 600 pixels de large */
+@media screen and (max-width: 600px) {
+  /* Styles spécifiques pour les petits écrans */
+}
+
+/* Pour les écrans entre 601 et 900 pixels de large */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  /* Styles spécifiques pour les écrans de taille moyenne */
+}
+
+/* Pour les écrans supérieurs à 900 pixels de large */
+@media screen and (min-width: 901px) {
+  /* Styles spécifiques pour les grands écrans */
+}
+
+/* Styles généraux */
+body {
+    background-image: url('Image/BackGround.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Aligner l'image au centre */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.5); /* Couleur de fond avec transparence */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le Menu horizontalement */
+}
+
+
+/* Styles de l'en-tête */
+header, nav {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 1% 0; /* Augmentation du rembourrage pour un meilleur espacement */
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: #444;
+}
+
+nav {
+    background-color: #666;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 3%; /* Augmentation du rembourrage pour un meilleur espacement */
+}
+
+nav a:hover {
+    color: #4876FF;
+}
+
+.word:hover {
+    font-size: 2em;
+}
+
+
+/* Styles du pied de page */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #666;
+    color: #fff;
+    padding: 1% 0; /* Réduit légèrement la hauteur du pied de page */
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px; /* Hauteur minimale augmentée pour une meilleure visibilité */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icon__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 25px;
+    display: inline-block;
+    transition: transform 0.5s; /* Transition appliquée à la propriété de transformation */
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+/* Réduire la largeur des liens du menu dans le pied de page */
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 10px 5px; /* Réduit l'espace autour des liens */
+    display: inline-block;
+    transition: opacity 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+/* Au survol, augmenter l'opacité */
+.menu__link:hover {
+    opacity: 1;
+}
+
+/* Styles du bas de page */
+.Bas		{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+	margin: 0.3%;
+}
+
+.Cadena:hover {
+	color: #4876FF; /* Changez la couleur selon votre choix */
+}
+
+/* Styles du lien de la politique de confidentialité */
+#politiqueConfidentialite {
+    cursor: pointer;
+    user-select: none;
+}
+
+#politiqueConfidentialite ion-icon {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+#politiqueConfidentialite a {
+    display: none;
+}
+
+/* Styles Contenu de la Page */
+.container2 {
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 40px;
+     max-width: 800px;
+     margin: 0 auto;
+}
+.Titre {
+	 font-size: 2em;
+     text-align: center;
+	 margin-bottom: 30px;
+     color: white;
+}
+.Titre2 {
+	 font-family: 'Roboto Slab', serif;
+	 font-size: 2em;
+     text-align: left;
+	 margin-bottom: 30px;
+     color: white;
+}
+.SousTitre {
+	font-size: 2em;			
+    text-align: left;
+    margin-bottom: 30px;
+    color: white;
+}
+		
+.SousTitre2 {
+	font-size: 3em;			
+    text-align: Center;
+    margin-bottom: 30px;
+    color: white;
+}		
+
+.Texte {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;			
+    text-align: left;
+    margin-bottom: 30px;
+    color: white;
+}
+		
+.PointTexte {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;			
+    text-align: left;
+    margin-bottom: 30px;
+    color: white;
+}		
+		
+		
+.apply-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.job-posting {
+    margin-bottom: 30px;
+}
+
+.job-posting h2 {
+    color: white;
+}
+
+.apply-form {
+    margin-top: 50px;
+}
+
+.form-control {
+    margin-bottom: 25px; /* Légèrement espacé pour un meilleur alignement */
+    padding: 15px; /* Espacement intérieur pour un aspect plus spacieux */
+    border-radius: 25px; /* Coins arrondis pour une apparence plus douce */
+    font-size: 1.3em; /* Taille de police légèrement augmentée pour une meilleure lisibilité */
+    border: 2px solid #ccc; /* Ajout d'une bordure pour une distinction claire */
+    width: 80%; /* Largeur du champ ajustée pour une meilleure mise en page */
+    box-sizing: border-box; /* Inclure le remplissage et la bordure dans la largeur */
+    color: black; /* Couleur du texte en blanc */
+    background-color: #ccc; /* Couleur de fond des bulles en gris */
+}
+
+.btn-primary {
+    background-color: #999;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px; /* Espacement du bouton ajusté pour un meilleur contraste */
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+	color: black;
+    background-color: #4876FF;
+}
